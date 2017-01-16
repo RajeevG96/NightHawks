@@ -1,0 +1,29 @@
+/****************** GENERAL *************/
+
+.container {
+    margin: 50px 0;
+}
+/**
+ * HOMEPAGE
+ */
+
+/* Header */
+
+#home .navbar {
+	margin-bottom:0px;
+}
+
+#home .navbar-default .container {
+	margin:0 auto;
+}
+
+#home .video-background img {
+ 	height: 500px;
+    width: 100%;
+    object-fit: cover;
+}   
+
+#home .musical-description {
+    text-align: center;
+    font-size: 25px;
+}
