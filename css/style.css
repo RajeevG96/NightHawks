@@ -27,3 +27,12 @@
     text-align: center;
     font-size: 25px;
 }
+
+/*Gallery*/
+
+.gallery-header {
+	margin: 0 auto;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
