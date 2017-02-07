@@ -1,11 +1,22 @@
 /****************** GENERAL *************/
 
 .container {
-    margin: 50px 0;
+    margin: 0;
+    padding:50px 0;
 }
 
-#home {
-    background-color: #2d2d2d;
+.btn-red {
+	color: #fff;
+    background-color: crimson;
+}
+
+.center {
+    text-align:center;
+}
+
+.no-padding {
+    padding-left:0 !important;
+    padding-right:0 !important;
 }
 
 /****************** HOMEPAGE *************/
@@ -21,10 +32,13 @@
     z-index: 1;
     min-height:70px;
     border-bottom: 1px solid;
+    position: absolute;
+    width:100%;
 }
 
 #home .navbar-default .container {
 	margin:0 auto;
+    padding: 0 15px;
 }
 
 #home .navbar-brand {
@@ -35,27 +49,20 @@
 	line-height:40px;
 }
 
-#home .video-background {
-	margin-bottom:60%;
-}   
-
 #home .video-background video {
     width: 100%;
-    position: absolute;
-    top: 0;
-    width: 100%;
+    display: block;
 }
 
-#home .musical-description {
-    text-align: center;
-    font-size: 25px;
-}
+@media screen and (max-width:1110px) {
+    #home .video-background video {
 
+    }
+}
 /*Gallery*/
 
 .gallery-container {
     margin-bottom: 2%;
-    margin-left: 8%;
 }
 
 .gallery-image {
@@ -69,6 +76,71 @@
     color: white;
 }
 
+
+/****************** MUSICAL DESCRIPTION *************/
+
+#home div#musical-description {
+    position: relative;
+    background: black;
+    overflow: hidden;
+}
+
+/*#home div#musical-description:before {
+	content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    background:url('../img/background-story.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}*/
+
+#home div#musical-description p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#home div#musical-description h3, #home div#musical-description p, #home div#musical-description button  {
+	color: #FFF;
+    position: relative;
+    z-index: 3;
+}
+
+/****************** CHARACTERS *************/
+
+#home div#characters {
+    background: white;
+}
+
+#home div#characters .header h2 {
+    font-family: kinescope;
+    font-size: 70px;
+}
+
+#home #characters .feature .info p {
+    color: #6C7279;
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 24px;
+    width: 83%;
+    font-weight: 400;
+}
+
+@media (min-width: 992px) {
+    #home #characters .feature.backwards .info {
+        float:right;
+    }
+}
 
 /****************** VIDEO CONFIGS *************/
 
@@ -86,3 +158,11 @@ video::-webkit-media-controls-mute-button {}
 video::-webkit-media-controls-timeline {}
 
 video::-webkit-media-controls-current-time-display {}
+
+/****************** FOOTER *************/
+
+#footer {
+    background: black;
+    color: white;
+}
+
