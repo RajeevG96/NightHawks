@@ -82,7 +82,42 @@ h4 {
 /*Creatives*/
 
 
+#creatives .navbar {
+	margin-bottom:0px;
+	/*background:black;*/
+	background: black;
+	border:0;
+    z-index: 1;
+    min-height:70px;
+    border-bottom: 1px solid;
+    width:100%;
+}
 
+#creatives .navbar-default .container {
+	margin:0 auto;
+    padding: 0 15px;
+}
+
+#creatives .navbar-brand {
+    color: white;
+    padding: 15px 0 !important; 
+    font-family: baskerville !important;
+}
+
+#creatives .navbar-nav>li>a { 
+	line-height:40px;
+    font-size: 16px;
+    color: white;
+}
+
+#creatives .video-background video {
+    width: 100%;
+    display: block;
+}
+
+.creatives div {
+    height: 12em;
+}
 
 /****************** MUSICAL STORY *************/
 
