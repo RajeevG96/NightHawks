@@ -37,7 +37,6 @@ h4 {
 
 /****************** HOMEPAGE *************/
 
-
 /* Header */
 
 #home .navbar {
@@ -73,12 +72,6 @@ h4 {
     display: block;
 }
 
-@media screen and (max-width:1110px) {
-    #home .video-background video {
-
-    }
-}
-
 /*Creatives*/
 
 
@@ -104,10 +97,20 @@ h4 {
     font-family: baskerville !important;
 }
 
+
+#creatives .navbar-nav>li {
+    display: inline-block;
+}
+
 #creatives .navbar-nav>li>a { 
 	line-height:40px;
-    font-size: 16px;
+    font-size: 25px;
     color: white;
+    
+}
+
+#creatives .navbar-nav>li>a:hover {
+    text-decoration: underline !important;
 }
 
 #creatives .video-background video {
@@ -115,10 +118,13 @@ h4 {
     display: block;
 }
 
-.creatives div {
-    height: 12em;
+.creative-title {
+    
 }
 
+.creative-description {
+    padding-top: 1%;
+}
 /****************** MUSICAL STORY *************/
 
 #home div#musical-story {
