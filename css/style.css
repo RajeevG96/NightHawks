@@ -50,14 +50,18 @@ p {
 /* Header */
 
 #home .navbar {
+    /*background-image:url('../img/global/wall-nav-bg.jpg');*/
+    background-color:black;
+    background-size: cover;
 	margin-bottom:0px;
 	/*background:black;*/
-	background: black;
 	border:0;
     z-index: 1;
     min-height:70px;
     border-bottom: 1px solid;
+    border-radius: 0;
     width:100%;
+    font-family: karlaregular !important;
 }
 
 #home .navbar-default .container {
@@ -67,8 +71,8 @@ p {
 
 #home .navbar-brand {
     color: white;
-    padding: 15px 0 !important; 
     font-family: baskerville !important;
+    font-size: 30px;
 }
 
 #home .navbar-nav>li>a { 
@@ -82,14 +86,17 @@ p {
     display: block;
 }
 
-@media screen and (max-width:1110px) {
-    #home .video-background video {
+.collapse {
+    display:block !important;
+}
 
+@media screen and (max-width:767px) {
+    .nav > li {
+        display: inline-block !important;
     }
 }
 
 /*Creatives*/
-
 
 #creatives .navbar {
 	margin-bottom:0px;
@@ -132,38 +139,25 @@ p {
 
 #home div#musical-story {
     position: relative;
-    background: url('../img/header-brackground.jpg');
+    background: url('../img/home/header-brackground.jpg');
     overflow: hidden;
-    height:800px;
+    height: auto;
+    font-family: karlaregular;
 }
 
-/*#home div#musical-description:before {
-	content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.6;
-    background:url('../img/background-story.png');
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-}*/
-
 #home div#musical-story .navbar-brand.big {
-    font-size: 100px;
+    font-size: 100px !important;
     margin-top: 300px;
 }
 
+@media screen and (max-width: 1199px) {
+   #home div#musical-story .navbar-brand.big {
+        margin-top: 50px !important;
+    }
+}
+
 #home div#musical-story .description {
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,1);
     padding: 50px;
     margin-top: 50px;
 }
@@ -194,6 +188,11 @@ p {
    background:#f92a2a;
 }
 
+@media screen and (max-width: 991px) {
+   #home div#musical-story .description {
+        margin-top: 200px;
+    }
+}
 
 /*
 VIDEO RESPONSIVE
@@ -216,50 +215,138 @@ VIDEO RESPONSIVE
 }
 
 .modal.in .modal-dialog {
-    -webkit-transform: translate(0, 150px);
-    -ms-transform: translate(0, 150px);
-    -o-transform: translate(0, 150px);
-    transform: translate(0, 150px);
+    -webkit-transform: translate(0, 150px) !important;
+    -ms-transform: translate(0, 150px) !important;
+    -o-transform: translate(0, 150px) !important;
+    transform: translate(0, 150px) !important;
 }
 
 /****************** CHARACTERS *************/
 
-#home div#characters {
+#characters {
     background: white;
 }    
 
-#home div#characters h1, #home div#characters h4 {
-    font-family: true_crimesregular, non-serif;
-}
-
-#home div#characters h1 {
-    font-weight: bold;
-    font-size:80px;
-}
-
-#home #characters .feature .info {
-    padding-left: 40px;
+#characters .feature .info {
     margin-top: 40px;
 }
 
-#home #characters .feature .info p {
-    color: #6C7279;
-    font-size: 14px;
+#characters .feature .backwards.info {
+    padding-left: 40px;
+}
+
+#characters .feature .info p {
+    font-size: 20px;
     margin-top: 20px;
     line-height: 24px;
     width: 83%;
     font-weight: 400;
 }
 
-#home #characters .feature .image img {
-    height: 420px;
+#characters .feature .image img {
+    height: 600px;
     object-fit: cover;
 }
 
-@media (min-width: 992px) {
-    #home #characters .feature.backwards .info {
+@media screen and (min-width: 992px) {
+    #characters .feature.backwards .info {
         float:right;
     }
+    #characters .feature.regular .image {
+        padding-left:0;
+    }
+    #characters .feature.backwards .info {
+        padding-left:50px;
+    }
+    #characters .feature.backwards .image {
+        padding-right:0;
+    }
+    #characters .feature.backwards .info p {
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #characters .feature .info p {
+        width:100%;
+    }
+    #characters .row.feature p {
+        margin:25px 0 40px 0;
+    }
+    #characters .feature .info {
+        margin-top: 60px !important;
+    }
+}
+
+/****************** MUSIC *********************/
+
+#music {
+    position: relative;
+    background: url('../img/music/music-background.jpg');
+    overflow: hidden;
+    height: auto;
+    color:white;
+}
+
+#music .row {
+    height: 200px;
+    position:relative;
+}
+
+#music .audio {
+    height: 100px;
+}
+
+#music .audio audio {
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (min-width:1199px) {
+    #music .description {
+        height: 200px;
+    }
+    #music .description p {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 15px;
+    }
+    #music .audio {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    #music .description p {
+        margin: 30px 0;
+    }
+    #music .row {
+        height: 100%;
+    }
+}
+
+/****************** ARROW *********************/
+
+#back-to-top {
+  background: none;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 20px !important;
+  z-index: 100;
+  display: none;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: black;
+  text-align: center;
+  display:none;
+  padding: 10px 0 0 0;
+}
+ 
+#back-to-top i {
+  font-size: 60px;
 }
 
 /****************** VIDEO CONFIGS *************/
