@@ -4,6 +4,11 @@ body {
     font-family: karlaregular !important;
 }
 
+h1, h2, h3 {
+    font-family: baskerville !important;
+    
+}
+
 .container {
     margin: 0;
     padding:50px 0;
@@ -151,7 +156,7 @@ p {
 
 #home div#musical-story {
     position: relative;
-    background: url('../img/home/header-brackground.jpg');
+    background: url('../img/ALLFOUR1copy.jpg');
     overflow: hidden;
     height: auto;
     font-family: karlaregular;
@@ -236,7 +241,8 @@ VIDEO RESPONSIVE
 /****************** CHARACTERS *************/
 
 #characters {
-    background: white;
+    background: #212121;
+    color: white;
 }    
 
 #characters .feature .info {
@@ -294,10 +300,12 @@ VIDEO RESPONSIVE
 
 #music {
     position: relative;
-    background: url('../img/music/music-background.jpg');
+    background: url('../img/BOGDANGUNLIGHT.jpg');
     overflow: hidden;
     height: auto;
     color:white;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #music .row {
@@ -389,3 +397,16 @@ video::-webkit-media-controls-current-time-display {}
     color: white;
 }
 
+/****************** Media Queries *************/
+
+/*Small screens*/
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) { 
+
+    #home .navbar-brand {
+        font-size: 4em !important;
+    }
+    
+}
