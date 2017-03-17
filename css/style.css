@@ -51,7 +51,7 @@ p {
 
 #home .navbar {
     /*background-image:url('../img/global/wall-nav-bg.jpg');*/
-    background-color:black;
+    background-color: transparent;
     background-size: cover;
 	margin-bottom:0px;
 	/*background:black;*/
@@ -73,6 +73,20 @@ p {
     color: white;
     font-family: baskerville !important;
     font-size: 30px;
+    
+}
+
+.logo-mark {
+    height: 50%;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.logo-mark img {
+    width: 100%;
+    height: auto;
 }
 
 #home .navbar-nav>li>a { 
@@ -98,47 +112,11 @@ p {
 
 /*Creatives*/
 
-#creatives .navbar {
-	margin-bottom:0px;
-	/*background:black;*/
-	background: black;
-	border:0;
-    z-index: 1;
-    min-height:70px;
-    border-bottom: 1px solid;
-    width:100%;
-}
-
-#creatives .navbar-default .container {
-	margin:0 auto;
-    padding: 0 15px;
-}
-
-#creatives .navbar-brand {
+#creatives {
+    background-image: url(../img/BlackMetal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
-    padding: 15px 0 !important; 
-    font-family: baskerville !important;
-}
-
-
-#creatives .navbar-nav>li {
-    display: inline-block;
-}
-
-#creatives .navbar-nav>li>a { 
-	line-height:40px;
-    font-size: 25px;
-    color: white;
-    
-}
-
-#creatives .navbar-nav>li>a:hover {
-    text-decoration: underline !important;
-}
-
-#creatives .video-background video {
-    width: 100%;
-    display: block;
 }
 
 .creatives hr {
@@ -154,9 +132,12 @@ p {
 
 /****************** MUSICAL STORY *************/
 
+#home {
+    background: url('../img/blackwall03.jpg');
+}
 #home div#musical-story {
     position: relative;
-    background: url('../img/ALLFOUR1copy.jpg');
+    
     overflow: hidden;
     height: auto;
     font-family: karlaregular;
@@ -241,8 +222,9 @@ VIDEO RESPONSIVE
 /****************** CHARACTERS *************/
 
 #characters {
-    background: #212121;
     color: white;
+    background-color: black;
+    background-image: linear-gradient( black, #202020 );
 }    
 
 #characters .feature .info {
@@ -300,7 +282,7 @@ VIDEO RESPONSIVE
 
 #music {
     position: relative;
-    background: url('../img/BOGDANGUNLIGHT.jpg');
+    background: url('../img/BOGDANGUNLIGHT.png');
     overflow: hidden;
     height: auto;
     color:white;
@@ -324,6 +306,10 @@ VIDEO RESPONSIVE
 
 #music hr {
     border-top:1px solid rgba(250,250,250, 0.5) !important;
+}
+
+.audio audio {
+    width: 60%;
 }
 
 @media screen and (min-width:1199px) {
