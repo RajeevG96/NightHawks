@@ -40,13 +40,17 @@ a {
     color:white;
 }
 
-button {
-    border:0;
+a:focus, a:hover {
+    color: dimgrey !important;
 }
 
 a, a:focus, a:hover, button, button:hover, button:focus {
     outline-offset: 0 !important; 
     outline:0 !important;
+}
+
+button {
+    border:0;
 }
 
 p {
