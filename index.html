@@ -11,6 +11,7 @@
 
 	<!-- FONTS -->
 	<link rel="stylesheet" href="fonts/fonts.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
 	
 	<!-- FONT AWESOME ICONS -->
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
@@ -30,17 +31,21 @@
 		<nav class="navbar navbar-default">
 		  <div class="container">
 		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <h4 class="navbar-brand">Nighthawks</h4>
-		    </div>
+		    
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
+                
+                <div class="navbar-header">
+                    <h4 class="navbar-brand">NightHawks</h4>
+                </div>
+				
+                <ul class="nav navbar-nav">
 			        <li><a href="index.html">Home</a></li>
 			        <li><a href="#characters">Characters</a></li>
 			        <li><a href="#music">Music</a></li>
-			        <li><a href="creatives.html">Creatives</a></li>
+			        <li><a href="#creatives">Creatives</a></li>
+			        <li><a href="#contact">Contact Us</a></li>
 				</ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -52,7 +57,11 @@
 			<div class="container clearfix">
 				<div class="row">
 					<div class="col-md-12 col-lg-6">
-						<h1 class="navbar-brand big">Nighthawks</h1>
+<!--                        <h1 class="navbar-brand big">Nighthawks</h1>-->
+                       <div class="logo-mark">
+                           <img src="img/global/nh-shadow-logo2.png">
+                       </div>
+                        
 					</div><!-- col-sm-6 -->
 					<div class="col-md-12 col-lg-6">
 						<div class="description">
@@ -150,7 +159,7 @@
 				<div class="col-md-12 col-lg-6">
 					<div class="audio">
 						<h2>The Perp Walk</h2>
-						<audio controls preload="none" style="width:480px;">
+						<audio controls preload="none" style="width:300px;">
 							<source src="audio/different-spaces-final.ogg" type="audio/ogg" />
 							<source src="audio/different-spaces-final.mp3" type="audio/mp3" />
 							<p>Your browser does not support HTML5 audio.</p>
@@ -166,7 +175,7 @@
 				<div class="col-md-12 col-lg-6">
 					<div class="audio">
 						<h2>Remember Me</h2>
-						<audio controls preload="none" style="width:480px;">
+						<audio controls preload="none" style="width:300px;">
 							<source src="audio/different-spaces-final.ogg" type="audio/ogg" />
 							<source src="audio/different-spaces-final.mp3" type="audio/mp3" />
 							<p>Your browser does not support HTML5 audio.</p>
@@ -182,7 +191,7 @@
 				<div class="col-md-12 col-lg-6">
 					<div class="audio">
 						<h2>Out There</h2>
-						<audio controls preload="none" style="width:480px;">
+						<audio controls preload="none" style="width:300px;">
 							<source src="audio/nh-act1-close-vers3.ogg" type="audio/ogg" />
 							<source src="audio/nh-act1-close-vers3.mp3" type="audio/mp3" />
 							<p>Your browser does not support HTML5 audio.</p>
@@ -198,7 +207,7 @@
 				<div class="col-md-12 col-lg-6">
 					<div class="audio">
 						<h2>Different Spaces</h2>
-						<audio controls preload="none" style="width:480px;">
+						<audio controls preload="none" style="width:300px;">
 							<source src="audio/out-there-demo1.ogg" type="audio/ogg" />
 							<source src="audio/out-there-demo1.mp3" type="audio/mp3" />
 							<p>Your browser does not support HTML5 audio.</p>
@@ -214,7 +223,7 @@
 				<div class="col-md-12 col-lg-6">
 					<div class="audio">
 						<h2>End of Act 1 - The Plan</h2>
-						<audio controls preload="none" style="width:480px;">
+						<audio controls preload="none" style="width:300px;">
 							<source src="audio/remember-me-final1.ogg" type="audio/ogg" />
 							<source src="audio/remember-me-final1.mp3" type="audio/mp3" />
 							<p>Your browser does not support HTML5 audio.</p>
@@ -230,13 +239,14 @@
 	
 	<!-- CREATIVES
 	================================================== -->
-	<div class="container">
-		<div class="row title">
+	<div id="creatives">
+	 <div class="container">
+		<div class="row">
 			<div class="col-md-12 container">
-				<h1>Creatives</h1>
+				<h1 class="title">Creatives</h1>
 			</div>
 		</div>
-	    <div class="row creatives">
+	    <div class="row creatives"><hr>
 	        <div class="col-md-4">
 	           <h2>Mike Woolmans, Music, Book & lyrics</h2> 
 	        </div>
@@ -249,27 +259,65 @@
 	        <div class="col-md-8">
 	           <p>Phil Kuntz is a Pulitzer Prize-winning journalist specializing in investigative and computer-assisted reporting. His work has exposed wrongdoing by powerful politicians in both U.S. political parties. He was a research consultant for Oscar-winner Alex Gibney's HBO documentary on Frank Sinatra, based in part on Phil's book "The Sinatra Files". His first play, "Count Basie Visits the Count Basie", will be performed at a theatre named after the Jazz great in Red Bank, New Jersey. Phil has been to hundreds of Bruce Springsteen concerts and lives on the Jersey Shore with his wife and twin boys.</p>
 	        </div>
-	        <div class="col-md-4 credits">
-	           <a class="btn btn-success" href="#" role="button">Latest News</a>
-	           <a class="btn btn-danger" href="#" role="button" data-toggle="modal" data-target="#demo"><i class="fa fa-video-camera"></i>WATCH THE VIDEO</a><br><br>
-	           <div>CREDITS: </div>
-	               <ul>
-                    <li>Web Design - <a href="http://itsfranhere.co.uk/">Francisco Figueira</a> | <a href="http://rajeevxgill.co.nf/">Rajeev Gill</a></li>
-                    <li>Direction - Mike Woolmans and Phil Kuntz</li>
-                    <li>Photography - Yassine Anthonisen Lazib. Website: www.yassine.dk</li>
-                    <li>Costumes - Grith Rahbek. Website: www.grithrahbek.com</li>
-                    <li>Make-up - Matilde Meiling. Email: matildemeiling@hotmail.com. Mobile: +45 29891610</li>
-                  </ul>
-                   <ul>
-                  <li>The Detective - Bogdan Gorgos. Email: gorgosb@gmail.com. Mobile: +45 28993821</li>
-                  <li>The Femme Fatale - Vanina Petrova. Email: vanina__petrova@abv.bg. Mobile: +4571398012</li>
-                  <li>The Husband - Jesper Keller</li>
-                  <li>The Old Detective - Frode Schwartz. Email: schwartz@privat.dk. Telephone +45 40327331</li>
-                  </ul> 
-	        </div>
+	        <hr>
 	    </div>
-	</div>				
 
+     <div class="row">
+         <div class="col-md-4 credits">
+             <div class="row">
+                 <div class="col-md-8 credits">
+                <h2>Website Design</h2>
+                <a href="http://itsfranhere.co.uk/">Francisco Figueira</a> | <a href="http://rajeevxgill.co.nf/">Rajeev Gill</a>
+	        </div>
+	        <div class="col-md-8 credits">
+                <h2>Direction</h2>
+                <p>Mike Woolmans & Phil Kuntz</p>
+	        </div>
+	        <div class="col-md-8 credits">
+                <h2>Photography</h2>
+                <a href="http://www.yassine.dk/">Yassine Anthonisen Lazib</a>
+	        </div>
+	        <div class="col-md-8 credits">
+                <h2>Costumes</h2>
+                <a href="http://www.grithrahbek.com/">Grith Rahbek</a>
+	        </div>
+	        <div class="col-md-8 credits">
+                <h2>Make-up</h2>
+                <a href="mailto:matildemeiling@hotmail.com">Matilde Meiling</a>
+                <p>+45 29891610</p>
+	        </div>
+             </div>
+         </div>
+         <div class="col-md-4 credits">
+             <div class="row">
+                 <div class="col-md-8 credits">
+                <h2>The Detective</h2>
+                <a href="mailto:gorgosb@gmail.com">Bogdan Gorgos</a>
+                <p>+45 28993821</p>
+	        </div>
+	        <div class="col-md-8 credits">
+                <h2>The Femme Fatale</h2>
+                <a href="mailto:vanina__petrova@abv.bg">Vanina Petrova</a>
+                <p>+4571398012</p>
+	        </div>
+	        <div class="col-md-8 credits">
+                <h2>The Husband</h2>
+               <p>Jesper Keller</p>
+	        </div>
+	        <div class="col-md-8 credits">
+                <h2>The Old Detective</h2>
+                <a href="mailto:schwartz@privat.dk">Frode Schwartz</a>
+                <p>+45 40327331</p>
+	        </div>
+             </div>
+         </div>
+         <div class="col-md-4 contact">
+             <h1 class="centered">Contact Info will go here</h1>
+         </div>
+     </div>
+     
+	 </div>				
+    </div>
 	<!-- FOOTER
 	================================================== -->
 	<footer>
