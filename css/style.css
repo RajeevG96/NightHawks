@@ -1,7 +1,9 @@
 /****************** GENERAL *************/
 
-body {
-    font-family: karlaregular !important;
+body, p, a {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 300 !important;
+    letter-spacing: 0.3px !important;
 }
 
 h1, h2, h3 {
@@ -60,17 +62,28 @@ p {
 
 #home .navbar {
     /*background-image:url('../img/global/wall-nav-bg.jpg');*/
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.82);
     background-size: cover;
 	margin-bottom:0px;
 	/*background:black;*/
 	border:0;
-    z-index: 1;
+    z-index: 2;
     min-height:70px;
     border-bottom: 1px solid;
     border-radius: 0;
     width:100%;
     font-family: karlaregular !important;
+    position: fixed;
+    
+}
+
+#home ul {
+   
+    width: 80%;
+}
+
+#home ul li {
+    margin: 0 5%;
 }
 
 #home .navbar-default .container {
@@ -90,7 +103,7 @@ p {
     width: 100%;
     position: relative;
     top: 50%;
-    transform: translateY(50%);
+    transform: translateY(71%);
 }
 
 .logo-mark img {
@@ -114,8 +127,30 @@ p {
 }
 
 @media screen and (max-width:767px) {
+    
+    #home .navbar-header {
+        display: none;
+    }
+    
+    #home ul {
+        margin: 0 auto;
+        max-width: 249px;
+    
+    }
+    
+    #home ul li:nth-child(4) {
+        margin-left: 12%;
+    
+    }
+    
+    #home ul li a {
+        padding: 0 0;
+    }
+    
     .nav > li {
         display: inline-block !important;
+        margin: 0 0;
+        
     }
 }
 
@@ -147,10 +182,11 @@ p {
 }
 #home div#musical-story {
     position: relative;
-    
+    padding-top: 70px;
     overflow: hidden;
     height: auto;
     font-family: karlaregular;
+    z-index: 1;
 }
 
 #home div#musical-story .navbar-brand.big {
@@ -197,8 +233,22 @@ p {
 }
 
 @media screen and (max-width: 991px) {
-   #home div#musical-story .description {
-        margin-top: 200px;
+   
+    .logo-mark {
+        height: auto;
+        width: 100%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-25%);
+    }
+    
+    #home div#musical-story .description {
+        margin-top: 0;
+        padding: 0 0;
+    }
+    
+    #home div#musical-story h3 {
+        text-align: center;
     }
 }
 
@@ -248,7 +298,7 @@ VIDEO RESPONSIVE
 #characters .feature .info p {
     font-size: 20px;
     margin-top: 20px;
-    line-height: 24px;
+    line-height: 29px;
     width: 83%;
     font-weight: 400;
 }
