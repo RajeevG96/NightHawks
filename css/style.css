@@ -284,6 +284,15 @@ VIDEO RESPONSIVE *************/
     transform: translate(0, 150px) !important;
 }
 
+.modal button.close {
+    position: absolute;
+    background-color: whte;
+    color: white;
+    right: 20px;
+    filter: 0 !important;
+    z-index: 99;
+    font-size: 50px;
+}
 /**********************************
 CHARACTERS PAGE *************/
 
