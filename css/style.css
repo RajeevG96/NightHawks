@@ -7,9 +7,8 @@ body, p, a {
     letter-spacing: 0.3px !important;
 }
 
-h1, h2, h3 {
-    font-family: baskerville !important;
-    
+h1, h2, h3, h4 {
+    font-family: true_crimesregular !important;
 }
 
 .container {
@@ -311,7 +310,7 @@ CHARACTERS PAGE *************/
 }
 
 #characters .feature .image img {
-    height: 600px;
+    height: 650px;
     object-fit: cover;
 }
 
