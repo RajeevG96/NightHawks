@@ -11,6 +11,10 @@ h1, h2, h3, h4 {
     font-family: true_crimesregular !important;
 }
 
+h1 {
+    font-size: 50px !important;
+}
+
 .container {
     margin: 0;
     padding:50px 0;
@@ -132,19 +136,22 @@ HOME PAGE *************/
 
 @media screen and (max-width:767px) {
     
+    #home .navbar {
+        min-height:58px;
+    }
+
     #home .navbar-header {
         display: none;
     }
-    
+
     #home ul {
         margin: 0 auto;
         max-width: 249px;
-    
+        margin-top: 2px;
     }
     
     #home ul li:nth-child(4) {
         margin-left: 12%;
-    
     }
     
     #home ul li a {
@@ -153,8 +160,11 @@ HOME PAGE *************/
     
     .nav > li {
         display: inline-block !important;
-        margin: 0 0;
-        
+        margin: 0 0; 
+    }
+
+    #home .navbar-nav>li>a { 
+        line-height:25px;
     }
 }
 
