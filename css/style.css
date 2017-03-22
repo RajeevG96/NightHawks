@@ -316,10 +316,6 @@ CHARACTERS PAGE *************/
 
 /****************** Credits *************/
 
-div.credits {
-    padding-left: 1.4%;
-}
-
 .credits h2, a {
     float: none;
     margin: 0 auto;
