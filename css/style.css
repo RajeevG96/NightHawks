@@ -26,6 +26,14 @@ h1 {
     font-size: 14px;
 }
 
+.btn-red:hover {
+    background-color: rgba(173, 42, 38, 0.67) !important;
+}
+
+.btn-green:hover {
+    background-color: rgba(92, 184, 92, 0.7);
+}
+
 .btn-green {
     color: #fff;
     background-color: rgba(92, 184, 92, 0.43);
