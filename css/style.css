@@ -149,6 +149,37 @@ HOME PAGE *************/
     display:block !important;
 }
 
+#home .buttons {
+    display: flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    height: 71px;
+}
+
+#home .buttons li a button {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+@media screen and (max-width:1199px) {
+    .logo-mark {
+        transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width:991px) {
+    .nav>li>a {
+        padding: 10px 5px 0 0 !important;
+    }
+    #home .buttons li a button {
+        padding:5px;
+    }     
+}
 
 @media screen and (max-width:767px) {
     
@@ -162,16 +193,9 @@ HOME PAGE *************/
 
     #home ul {
         margin: 0 auto;
-        max-width: 249px;
+        text-align: center;
+        max-width: 230px;
         margin-top: 2px;
-    }
-    
-    #home ul li:nth-child(1) {
-        margin-left: 14%;
-    }
-    
-    #home ul li:nth-child(4) {
-        margin-left: 19%;
     }
     
     #home ul li a {
@@ -184,7 +208,11 @@ HOME PAGE *************/
     }
 
     #home .navbar-nav>li>a { 
-        line-height:25px;
+        line-height: 10px;
+    }
+    
+    #home .buttons {
+        margin-top: -10px;
     }
 }
 
@@ -218,7 +246,7 @@ MUSICAL STORY PAGE *************/
 }
 #home div#musical-story {
     position: relative;
-    padding-top: 70px;
+    padding-top: 75px;
     overflow: hidden;
     height: auto;
     font-family: karlaregular;
@@ -266,18 +294,10 @@ MUSICAL STORY PAGE *************/
 
 #home div#musical-story button {
    background:#f92a2a;
+   font-weight: bold;
 }
 
 @media screen and (max-width: 991px) {
-   
-    .logo-mark {
-        height: auto;
-        width: 100%;
-        position: relative;
-        top: 50%;
-        transform: translateY(-25%);
-    }
-    
     #home div#musical-story .description {
         margin-top: 0;
         padding: 0 0;
@@ -348,9 +368,31 @@ CHARACTERS PAGE *************/
     font-weight: 400;
 }
 
-#characters .feature .image img {
-    height: 700px;
-    object-fit: cover;
+#characters .feature .image { 
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 800px;
+    background-size: cover;
+}
+
+#characters .feature .image.first { 
+    background-image: url(../img/characters/4-character.png);
+}
+
+#characters .feature .image.second { 
+    background-image: url(../img/characters/1-character.png);
+    background-position-x: 60%;
+}
+
+#characters .feature .image.third { 
+    background-image: url(../img/characters/3-character.png);
+}
+
+#characters .feature .image.fourth { 
+    background-image: url(../img/characters/2-character.png);
+    background-position-x: 30%;
 }
 
 /****************** Credits *************/
