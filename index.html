@@ -271,16 +271,16 @@
 			</div>-->
 		    <div class="row">
 		        <div class="col-md-4">
-		        	<a href="#" class="pop">
+		        	<a href="#" class="pop out">
 		           		<img class="img-responsive" src="img/gallery/Bogdan1.jpg" alt="Detective Valente">
 		            </a>
 		        </div>
-		        <div class="col-md-4">
+		        <div class="col-md-4 out">
 		        	<a href="#" class="pop">
 		            	<img class="img-responsive" src="img/gallery/BOGDAN2.jpg" alt="Detective Valente">
 		            </a>
 		        </div>
-		        <div class="col-md-4">
+		        <div class="col-md-4 out">
 		        	<a href="#" class="pop">
 		            	<img class="img-responsive" src="img/gallery/BogdanVanina1.jpg" alt="Belle Howard">
 		            </a>
@@ -288,17 +288,17 @@
 		    </div><br>
 		    <div class="row">
 		        <div class="col-md-4">
-		        	<a href="#" class="pop">
+		        	<a href="#" class="pop out">
 		            	<img class="img-responsive" src="img/gallery/OldValhospstill1.jpg" alt="">
 		            </a>
 		        </div>
 		        <div class="col-md-4">
-		        	<a href="#" class="pop">
+		        	<a href="#" class="pop out">
 		            	<img class="img-responsive" src="img/gallery/ALLFOUR1.jpg" alt="">
 		            </a>
 		        </div>
 		        <div class="col-md-4">
-		        	<a href="#" class="pop">
+		        	<a href="#" class="pop out">
 		            	<img class="img-responsive" src="img/gallery/VANINABACK1.jpg" alt="">
 		            </a>
 		        </div>
@@ -453,6 +453,14 @@
 			$('#imagemodal').modal('show'); 
 			e.preventDefault();  
 		});		
+	});
+	</script>
+	
+	<!-- Hover effect on gallery Images -->
+	<script>
+	var myimage = $("#gallery img").click(function(){
+	    myimage.find('img').removeClass('out');
+	    $(this).find('img').first().addClass('in');
 	});
 	</script>
 </body>

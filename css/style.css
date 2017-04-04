@@ -262,6 +262,21 @@ MODAL GALLERY *************/
     border-radius: 1px;
 }
 
+@media screen and (min-width : 481px) {
+    #gallery .out img {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    }
+    #gallery img:hover {
+        opacity: 1.0;
+        filter: alpha(opacity=100); /* For IE8 and earlier */
+    }
+    #gallery .in img {
+        opacity: 1;
+        filter: alpha(opacity=100); /* For IE8 and earlier */
+    }
+}
+
 @media (min-width: 768px) {
     #gallery .modal-dialog {
         width: 900px;
