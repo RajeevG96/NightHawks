@@ -417,6 +417,15 @@ CHARACTERS PAGE *************/
     background-position-x: 30%;
 }
 
+/*Rules for image display on mobile*/
+
+@media screen and (max-width: 768px) {
+    #characters .image {
+        max-height: 400px;
+        
+    }
+}
+
 /****************** Credits *************/
 
 .credits h2, a {
@@ -439,18 +448,6 @@ CHARACTERS PAGE *************/
     }
     #characters .feature.backwards .info p {
         width:100%;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    #characters .feature .info p {
-        width:100%;
-    }
-    #characters .row.feature p {
-        margin:25px 0 40px 0;
-    }
-    #characters .feature .info {
-        margin-top: 60px !important;
     }
 }
 
@@ -566,18 +563,33 @@ footer {
 CONTACT US *************/
 
 #contact {
-    height:600px;
+    height: 600px;
+    background-image: linear-gradient( black, #601818 );
 }
 
 #contact p {
-    margin:20px 0;
+    margin: 20px 0;
+    color: white;
 }
 
+#contact h1 {
+    color: white;
+}
+
+<<<<<<< Updated upstream
 #contact h1 {
     margin-top: 20px; */
     margin-bottom: 10px;
 }
 
+=======
+#contact {
+    display: flex;
+    align-items: center;
+}
+
+
+>>>>>>> Stashed changes
 /**********************************
 MEDIA QUERIES *************/
 
