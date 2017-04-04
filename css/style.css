@@ -86,10 +86,9 @@ HOME PAGE *************/
 
 #home .navbar {
     /*background-image:url('../img/global/wall-nav-bg.jpg');*/
-    background-color: rgba(0, 0, 0, 0.82);
     background-size: cover;
 	margin-bottom:0px;
-	/*background:black;*/
+	background:black;
 	border:0;
     z-index: 2;
     min-height:70px;
@@ -343,6 +342,28 @@ VIDEO RESPONSIVE *************/
     z-index: 99;
     font-size: 50px;
 }
+
+/**********************************
+THE STORY PAGE *************/
+
+#story-indetail {
+    background-image: url(../img/allfour_2.png);
+    background-position-x: 90%;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: auto;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+}
+
+@media screen and (max-width : 1199px) {
+    #story-indetail {
+        background-position-x: 50%;
+    }
+}
+
 /**********************************
 CHARACTERS PAGE *************/
 
