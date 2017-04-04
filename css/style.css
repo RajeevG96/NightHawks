@@ -21,23 +21,23 @@ h1 {
 }
 
 .btn-red {
-	color: #fff;
-    background-color: rgba(173, 42, 38, 0.43) !important;
-    font-size: 14px;
+    background: #b51c13;
+    font-weight: bold;
+    border: 1px solid red;
 }
 
 .btn-red:hover {
-    background-color: rgba(173, 42, 38, 0.67) !important;
+    background-color: #781e19 !important;
 }
 
 .btn-green:hover {
-    background-color: rgba(92, 184, 92, 0.7);
+    background-color: #0f3f0f;
 }
 
 .btn-green {
-    color: #fff;
-    background-color: rgba(92, 184, 92, 0.43);
-    font-size: 14px;
+    background: darkgreen;
+    font-weight: bold;
+    border: 1px solid green;
 }
 
 .center {
@@ -85,10 +85,9 @@ HOME PAGE *************/
 /* Header */
 
 #home .navbar {
-    /*background-image:url('../img/global/wall-nav-bg.jpg');*/
+    background:black;
     background-size: cover;
 	margin-bottom:0px;
-	background:black;
 	border:0;
     z-index: 2;
     min-height:70px;
@@ -286,14 +285,16 @@ MUSICAL STORY PAGE *************/
 }
 
 #home div#musical-story button {
-    background:white;
+    background: black;
+    font-weight: bold;
+    border: 1px solid red;
     padding:10px 20px;
     color:white;
 }
 
-#home div#musical-story button {
-   background:#f92a2a;
-   font-weight: bold;
+#home div#musical-story button:hover {
+    background:white;
+    color:black;
 }
 
 @media screen and (max-width: 991px) {
