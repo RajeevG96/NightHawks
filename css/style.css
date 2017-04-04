@@ -262,7 +262,8 @@ MODAL GALLERY *************/
     border-radius: 1px;
 }
 
-@media screen and (min-width : 481px) {
+/* Only for Desktop */
+@media screen and (min-width : 992px) {
     #gallery .out img {
     opacity: 0.5;
     filter: alpha(opacity=50); /* For IE8 and earlier */
