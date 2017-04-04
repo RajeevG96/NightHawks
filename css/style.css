@@ -103,8 +103,8 @@ HOME PAGE *************/
     width: 80%;
 }
 
-#home ul li {
-    margin: 0 1%;
+#home ul.navbar-nav li {
+    margin-right:15px;
 }
 
 #home .navbar-default .container {
@@ -116,7 +116,9 @@ HOME PAGE *************/
     color: white;
     font-family: baskerville !important;
     font-size: 30px;
-    
+    font: italic bold 27px Georgia, Serif;
+    text-shadow: -4px 3px 0 grey, -14px 7px 0 #0a0e27;
+    line-height: 20px; 
 }
 
 .logo-mark {
@@ -153,7 +155,7 @@ HOME PAGE *************/
     display: -ms-flexbox;
     display: -webkit-flex;
     align-items: center;
-    height: 71px;
+    height: 60px;
 }
 
 #home .buttons li a button {
@@ -170,6 +172,15 @@ HOME PAGE *************/
     }
 }
 
+@media screen and (min-width : 991px) {
+    #home .buttons {
+        height: 71px;
+    }
+    #home ul.navbar-nav li {
+        margin-right: 5px;
+    }
+}
+
 @media screen and (max-width:991px) {
     .nav>li>a {
         padding: 10px 5px 0 0 !important;
@@ -177,6 +188,15 @@ HOME PAGE *************/
     #home .buttons li a button {
         padding:5px;
     }     
+    #home ul {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width : 991px) {
+    #home .navbar-nav {
+        margin-top: -20px;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -204,13 +224,50 @@ HOME PAGE *************/
         display: inline-block !important;
         margin: 0 0; 
     }
+}
 
+@media screen and (min-width:481px) and (max-width : 767px) {
+    #home .navbar-nav>li>a {
+        line-height:10px;
+    }
+    #home ul.navbar-nav li {
+        margin-right: 5px;
+    }
+    #home .buttons {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    #home ul {
+        line-height: 1;
+    }
+    #home ul.navbar-nav li {
+        margin-right: 5px;
+    }
     #home .navbar-nav>li>a { 
         line-height: 10px;
     }
     
     #home .buttons {
-        margin-top: -10px;
+        margin-top: -7px;
+        margin-bottom: -10px;
+    }
+}
+
+/**********************************
+MODAL GALLERY *************/
+
+#gallery .modal-content {
+    border-radius: 1px;
+}
+
+@media (min-width: 768px) {
+    #gallery .modal-dialog {
+        width: 900px;
+    }
+    #gallery .modal-body {
+        padding: 5px;
     }
 }
 
@@ -451,6 +508,41 @@ CHARACTERS PAGE *************/
     }
 }
 
+@media screen and (max-width: 991px) {
+    #characters .feature .info p {
+        width:100%;
+    }
+    #characters .row.feature p {
+        margin:25px 0 40px 0;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width: 991px) {
+    #characters .feature .info {
+        margin-top: 60px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #characters .feature .image {
+        background-size: contain;
+        height: 300px;
+    }
+    #characters .feature .info {
+        margin-top: 0px;
+    }
+    .container.main-title {
+        padding:30px 0;
+    }
+}
+
+/****************** Credits *************/
+
+.credits h2, a {
+    float: none;
+    margin: 0 auto;
+}
+
 /**********************************
 SOUNDTRACKS PAGE *************/
 
@@ -576,20 +668,16 @@ CONTACT US *************/
     color: white;
 }
 
-<<<<<<< Updated upstream
 #contact h1 {
     margin-top: 20px; */
     margin-bottom: 10px;
 }
 
-=======
 #contact {
     display: flex;
     align-items: center;
 }
 
-
->>>>>>> Stashed changes
 /**********************************
 MEDIA QUERIES *************/
 
