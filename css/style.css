@@ -572,6 +572,11 @@ CONTACT US *************/
     margin:20px 0;
 }
 
+#contact h1 {
+    margin-top: 20px; */
+    margin-bottom: 10px;
+}
+
 /**********************************
 MEDIA QUERIES *************/
 
