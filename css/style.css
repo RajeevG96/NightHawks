@@ -23,6 +23,7 @@ h1 {
 .btn-red {
     background: #b51c13;
     font-weight: bold;
+    font-size:14px;
     border: 1px solid red;
 }
 
@@ -37,6 +38,7 @@ h1 {
 .btn-green {
     background: darkgreen;
     font-weight: bold;
+    font-size:14px;
     border: 1px solid green;
 }
 
