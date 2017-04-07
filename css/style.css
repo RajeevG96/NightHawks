@@ -366,8 +366,8 @@ MUSICAL STORY PAGE *************/
 }
 
 #home div#musical-story button:hover {
-    background:white;
-    color:black;
+    background: #b51c13;
+    color: white;
 }
 
 @media screen and (max-width: 991px) {
